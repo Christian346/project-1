@@ -1,8 +1,9 @@
+
 body{
     background-image: url(images/pattern-background-desktop.svg) ;
-    background-position: ;/**/
+    /*background position*/
     font-size: 16px;
-    font-family:red;
+    font-family:'Red Hat Display', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,20 +11,113 @@ body{
 }
 .main-div{
 
-
+margin-top:70px;
 background-color: hsl(225, 100%, 98%);
 text-align: center;
 width:40%;/* makes the div box shorter*/
 border-radius: 20px;
 
+}
 
+.container {
+    
+    display: flex;
+    justify-content:center;
+}
 
+.inner-div{
+    background-color:hsl(215, 67%, 96%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:80%;
+    height: 100px ;
+   
 }
 
 .top-img{
+    
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width:100%;
     height:100%;
     object-fit:cover;
 }
+.music-img{
+    margin-top:30px;
+    margin-right:15px;
+    margin-left:20px;
+    
+}
+.plan{
+    margin-top:25px;
+    margin-right: 7px;
+    margin-left: 8px;
+    
+}
+
+.link{
+    margin: 40px;
+    color:hsl(245, 75%, 52%);
+   
+}
+
+p{
+    color:hsl(224, 23%, 55%)
+}
+
+.button-pay{
+    margin-top:20px;
+    width:75%;
+    font-weight: 900;
+
+    
+}
+.margin-top{
+    margin-top:25px;
+
+}
+.button-primary{
+    color:white;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    font-size:16px;
+    margin-bottom: 15px;
+    
+    
+  }
+  .button {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+
+.button:focus, .button:active:focus, .button.active:focus {
+    outline: 0 none;
+}
+
+.button-light {
+    background: transparent;
+    color:hsl(224, 23%, 55%);
+    margin-bottom: 30px;
+}
+.button-light:hover{
+color:black;
+}
+.button-primary:hover, .button-primary:focus, .button-primary:active, .button-primary.active, .open > .dropdown-toggle.btn-primary {
+    background:hsl(224, 23%, 55%);
+}
+
+.button-primary:active, .button-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.text-s{
+    box-shadow: 2px 5px 10px #888888;
+   
+}
+

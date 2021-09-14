@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <style>
     body{
@@ -21,25 +23,30 @@
 <body>
     
     <div class ="main-div">
-        
         <img src="images/illustration-hero.svg"  class ="top-img" alt="">
-        
-        <h1>Order Summary</h1>
-        <p>you can now listen to millions of songs,<br/>
-            audiobooks,and podcasts on any device<br/>
+        <h2 class="margin-top"><b>Order Summary</b></h2>
+        <p>You can now listen to millions of songs,<br/>
+            audiobooks, and podcasts on any device<br/>
             anywhere you like!</p>
-        
-            <inner class="inner-div">
-               <img src="images/icon-music.svg"alt="">
-                <p>Annual Plan <br/>$59.99/year   <button>Change</button></p>
+
+           <div class="container">
+            <div class="inner-div">
+               <img src="images/icon-music.svg" class="music-img" height="40px">
                 
-                <button>Proceed to Payment</button>
-                <br/>
-                <button>Cancel Order</button>
-            </inner>
-    
+               <div class="plan">
+               <h6><b>Annual Plan</b></h6>
+                <p>$59.99/year </p>   
+             </div> 
 
-
+             <a href="#" class ="link"><b>Change</b></a>
+                
+            </div>
+        </div>
+             <div class= "buttons">
+            <button class =" button button-primary button-pay text-s "><b>Proceed to Payment</b></button>
+            <br/>
+            <button class = "button button-light"><b>Cancel Order</b></button>
+            </div>
 
     </div>
     
