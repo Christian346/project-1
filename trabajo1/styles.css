@@ -1,7 +1,10 @@
 
 body{
-    background-image: url(images/pattern-background-desktop.svg);
+    
+    background-image:url(images/pattern-background-desktop.svg); 
     /*background position*/
+   background-size: 110% 70%;
+    background-repeat:no-repeat;
     font-size: 16px;
     font-family:'Red Hat Display', sans-serif;
     display: flex;
@@ -11,12 +14,16 @@ body{
 }
 .main-div{
 
-margin-top:20px;
-background-color: hsl(225, 100%, 98%);
+
+background-color: hsl(0, 0%, 100%);
 text-align: center;
-width:30%;/* makes the div box shorter*/
-height:630px;
-border-radius: 20px;
+width:37%;/* makes the div box shorter*/
+height:820px;
+border-radius: 30px;
+position:relative;
+top:180px;
+box-shadow:2px 2px 30px #cccbcb;
+font-size: 16px;
 
 }
 
@@ -33,35 +40,50 @@ border-radius: 20px;
     flex-direction: row;
     justify-content: center;
     width:80%;
-    height: 100px ;
+    height: 120px ;
     margin-left: 10%;
+    margin-top:30px;
    
 }
 
 .top-img{
     
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     width:100%;
-    height:200px;
+    height:270px;
     margin-bottom: 10px;
 
     
 }
+.margin-top{
+    margin-top:40px;
+    font-size: 32px;
+    margin-bottom: 10px;;
+
+}
+p{
+    color:hsl(224, 23%, 55%);
+    font-size:16px;
+}
+.p-margin{
+    margin-top: 20px;
+}
+
 .music-img{
-    height:65px;
-    width:65px;
+    height:55px;
+    width:55px;
     position:relative;
-    top:15px;
-    right:2px;
+    top:35px;
+    right:36px;
     
 }
 .plan{
-    margin-top:25px;
+    margin-top:35px;
     margin-right: 7px;
-    margin-left: 8px;
+    margin-left: 3px;
     position: relative;
-    right:10px;
+    right:30px;
     
 }
 
@@ -69,14 +91,13 @@ border-radius: 20px;
     margin: 39px;
     color:hsl(245, 75%, 52%);
     position: relative;
-    left:30px;
+    left:70px;
+    top:10px;
     font-size:16px;
    
 }
 
-p{
-    color:hsl(224, 23%, 55%)
-}
+
 .p2{
     font-size: 16px;
     color:black;
@@ -94,15 +115,16 @@ p{
     position: relative;
     bottom:15px;
 }
-.margin-top{
-    margin-top:20px;
-    font-size: 25px;
-    margin-bottom: 10px;;
-
+.button {
+    padding: 20px 26px;
+    border: 0 none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
 }
 
 .button-pay{
-    margin-top:20px;
+    margin-top:40px;
     width:75%;
     font-weight: 900;  
 }
@@ -116,13 +138,7 @@ p{
     
     
   }
-  .button {
-    padding: 16px 24px;
-    border: 0 none;
-    font-weight: 500;
-    letter-spacing: 1px;
-    
-}
+  
 
 .button:focus, .button:active:focus, .button.active:focus {
     outline: 0 none;
@@ -131,7 +147,8 @@ p{
 .button-light {
     background: transparent;
     color:hsl(224, 23%, 55%);
-    margin-bottom: 30px;
+    margin-top:10px;
+    margin-bottom: 20px;
 }
 .button-light:hover{
 color:black;
@@ -146,420 +163,6 @@ color:black;
 }
 
 .text-s{
-    box-shadow: 2px 5px 10px #888888;
+    box-shadow: 2px 15px 29px #c9c6c6;
    
 }
-/*laptop query*/
-@media screen and (max-width: 1300px){
-    body{
-        background-image: url(images/pattern-background-desktop.svg);
-        /*background position*/
-        font-size: 16px;
-        font-family:'Red Hat Display', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    .main-div{
-    
-    margin-top:20px;
-    background-color: hsl(225, 100%, 98%);
-    text-align: center;
-    width:30%;/* makes the div box shorter*/
-    height:630px;
-    border-radius: 20px;
-    
-    }
-    
-    .box {
-        
-        display: flex;
-        justify-content:center;
-    }
-    
-    .inner-div{
-        background-color:hsl(215, 67%, 96%);
-        border-radius: 15px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width:80%;
-        height: 100px ;
-        margin-left: 10%;
-       
-    }
-    
-    .top-img{
-        
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        width:100%;
-        height:200px;
-        margin-bottom: 10px;
-    
-        
-    }
-    .music-img{
-        height:5px;
-        width:5px;
-        position:relative;
-        top:15px;
-        left:20px;
-        
-    }
-    .plan{
-        margin-top:25px;
-        position: relative;
-        left:15px;
-        
-    }
-    
-    .link{
-        margin-top: 9px;
-        color:hsl(245, 75%, 52%);
-        position:relative;
-        right:300px;
-        font-size:16px;
-    }
-    
-    p{
-        color:hsl(224, 23%, 55%)
-    }
-    .p2{
-        font-size: 16px;
-        color:black;
-        width: 100px;
-        white-space:nowrap;
-        text-overflow:ellipsis;
-        position: relative;
-        left:5px;
-        
-        
-    }
-    .p1{
-        font-size: 16px;
-        position: relative;
-        bottom:15px;
-    }
-    .margin-top{
-        margin-top:20px;
-        font-size: 25px;
-        margin-bottom: 10px;;
-    
-    }
-    
-    .button-pay{
-        margin-top:20px;
-        width:75%;
-        font-weight: 900;  
-    }
-    
-    .button-primary{
-        color:white;
-        background-color: hsl(245, 75%, 52%);
-        border-radius: 10px;
-        font-size:16px;
-        margin-bottom: 15px;
-        
-        
-      }
-      .button {
-        padding: 16px 24px;
-        border: 0 none;
-        font-weight: 500;
-        letter-spacing: 1px;
-        
-    }
-    
-    .button:focus, .button:active:focus, .button.active:focus {
-        outline: 0 none;
-    }
-    
-    .button-light {
-        background: transparent;
-        color:hsl(224, 23%, 55%);
-        margin-bottom: 30px;
-    }
-    .button-light:hover{
-    color:black;
-    }
-    .button-primary:hover, .button-primary:focus, .button-primary:active, .button-primary.active, .open > .dropdown-toggle.btn-primary {
-        background:hsl(224, 23%, 55%);
-    }
-    
-    .button-primary:active, .button-primary.active {
-        background: #007299;
-        box-shadow: none;
-    }
-    
-    .text-s{
-        box-shadow: 2px 5px 10px #888888;
-       
-    }
-
-
-}
-
-
-
-
-@media screen and (max-width: 1441px){
-body{
-    background-image: url(images/pattern-background-desktop.svg);
-    /*background position*/
-    font-size: 16px;
-    font-family:'Red Hat Display', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-.main-div{
-
-margin-top:20px;
-background-color: hsl(225, 100%, 98%);
-text-align: center;
-width:30%;/* makes the div box shorter*/
-height:630px;
-border-radius: 20px;
-
-}
-
-.box {
-    
-    display: flex;
-    justify-content:center;
-}
-
-.inner-div{
-    background-color:hsl(215, 67%, 96%);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width:80%;
-    height: 100px ;
-    margin-left: 10%;
-   
-}
-
-.top-img{
-    
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width:100%;
-    height:200px;
-    margin-bottom: 10px;
-
-    
-}
-.music-img{
-    height:65px;
-    width:65px;
-    position:relative;
-    top:15px;
-    right:2px;
-    
-}
-.plan{
-    margin-top:25px;
-    margin-right: 7px;
-    margin-left: 8px;
-    position: relative;
-    right:10px;
-    
-}
-
-.link{
-    margin: 39px;
-    color:hsl(245, 75%, 52%);
-    position: relative;
-    left:30px;
-    font-size:16px;
-   
-}
-
-p{
-    color:hsl(224, 23%, 55%)
-}
-.p2{
-    font-size: 16px;
-    color:black;
-    width: 100px;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    position: relative;
-    left:5px;
-    
-    
-}
-.p1{
-    font-size: 16px;
-    position: relative;
-    bottom:15px;
-}
-.margin-top{
-    margin-top:20px;
-    font-size: 25px;
-    margin-bottom: 10px;;
-
-}
-
-.button-pay{
-    margin-top:20px;
-    width:75%;
-    font-weight: 900;  
-}
-
-.button-primary{
-    color:white;
-    background-color: hsl(245, 75%, 52%);
-    border-radius: 10px;
-    font-size:16px;
-    margin-bottom: 15px;
-    
-    
-  }
-  .button {
-    padding: 16px 24px;
-    border: 0 none;
-    font-weight: 500;
-    letter-spacing: 1px;
-    
-}
-
-.button:focus, .button:active:focus, .button.active:focus {
-    outline: 0 none;
-}
-
-.button-light {
-    background: transparent;
-    color:hsl(224, 23%, 55%);
-    margin-bottom: 30px;
-}
-.button-light:hover{
-color:black;
-}
-.button-primary:hover, .button-primary:focus, .button-primary:active, .button-primary.active, .open > .dropdown-toggle.btn-primary {
-    background:hsl(224, 23%, 55%);
-}
-
-.button-primary:active, .button-primary.active {
-    background: #007299;
-    box-shadow: none;
-}
-
-.text-s{
-    box-shadow: 2px 5px 10px #888888;
-   
-}
-}
-/*mobile query*/
-@media screen and (max-width: 376px) {
-    body {
-        
-       
-        font-family:'Red Hat Display', sans-serif;
-    }
-    .main-div{
-
-        margin-top:50px;
-        background-color: hsl(225, 100%, 98%);
-        text-align: center;
-        width:60%;/* makes the div box shorter*/
-        border-radius: 20px;
-        font-size: 10px;
-   
-        }
-        
-        .inner-div{
-            background-color:hsl(215, 67%, 96%);
-            border-radius: 10px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            width:80%;
-            height: 40px;
-            margin-left: 10%;
-            font-size:10px;
-           
-        }
-
-        .button-pay{
-            margin-top:20px;
-            width:75%;
-            font-weight: 500;  
-        }
-        
-        .button-primary{
-            color:white;
-            background-color: hsl(245, 75%, 52%);
-            border-radius: 10px;
-            font-size:10px;
-            margin-bottom: 15px;
-            
-            
-          }
-          .button {
-            padding: 10px 24px; /*first is height second is width*/
-            border: 0 none;
-            font-weight: 500;
-            letter-spacing: 1px;
-            
-        }
-        .button-light {
-            background: transparent;
-            color:hsl(224, 23%, 55%);
-            margin-bottom: 30px;
-        }
-        .inner-div img{
-            height:27px;
-            width:27px;
-            margin-top:9px;
-            margin-bottom: 30px;
-            position: relative;
-            left:5px;
-            
-        }
-
-        .plan{
-            height:10px;
-            width:10px;
-            margin-top:4px;
-            font-size: 2px;
-
-           
-        }
-        .p2{
-            font-size: 9px;
-            color:black;
-            width: 100px;
-            white-space:nowrap;
-            overflow:hidden;
-            text-overflow:ellipsis;
-            position: relative;
-            right:25px;
-            
-            
-        }
-        .p1{
-            font-size: 10px;
-            position: relative;
-            bottom:15px;
-        }
-        .link{
-            margin-top: 13px;
-            color:hsl(245, 75%, 52%);
-            font-size: 9px;
-            position: relative;
-            left:20px;
-           
-        }
-        .margin-top{
-            margin-top:25px;
-            font-size:20px;
-        }
-    }
-    
