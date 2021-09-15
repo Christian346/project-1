@@ -1,12 +1,11 @@
 
 body{
-    
-    background-image:url(images/pattern-background-desktop.svg); 
+    background-image: url(images/pattern-background-desktop.svg) ;
     /*background position*/
-   background-size: 110% 70%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
+    background-size:100%  ;
     font-size: 16px;
-    font-family:'Red Hat Display', sans-serif;
+    font-family:red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,23 +13,15 @@ body{
 }
 .main-div{
 
-
-background-color: hsl(0, 0%, 100%);
+margin-top:70px;
+background-color: hsl(240, 12%, 97%);
 text-align: center;
-width:37%;/* makes the div box shorter*/
-height:820px;
-border-radius: 30px;
-position:relative;
-top:180px;
-box-shadow:2px 2px 30px #cccbcb;
-font-size: 16px;
+border-radius: 20px;
+width:50%;
+position: relative;
+left:25%;
+height:auto;
 
-}
-
-.box {
-    
-    display: flex;
-    justify-content:center;
 }
 
 .inner-div{
@@ -39,82 +30,45 @@ font-size: 16px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width:80%;
-    height: 120px ;
-    margin-left: 10%;
-    margin-top:30px;
-   
+    width:20px;
+    height:100px;
+}
+
+.change-div{
+    -ms-transform: translateY(50%);
+    transform: translateY(30%);
 }
 
 .top-img{
-    
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width:100%;
-    height:270px;
-    margin-bottom: 10px;
-
-    
+    height:250px;
+    object-fit:cover;
 }
-.margin-top{
-    margin-top:40px;
-    font-size: 32px;
-    margin-bottom: 10px;;
-
-}
-p{
-    color:hsl(224, 23%, 55%);
-    font-size:16px;
-}
-.p-margin{
-    margin-top: 20px;
-}
-
 .music-img{
-    height:55px;
-    width:55px;
-    position:relative;
-    top:35px;
-    right:36px;
+    margin-top:30px;
+    margin-right:15px;
+    margin-left:20px;
+    
     
 }
 .plan{
-    margin-top:35px;
+    margin-top:25px;
     margin-right: 7px;
-    margin-left: 3px;
-    position: relative;
-    right:30px;
+    margin-left: 8px;
     
 }
 
 .link{
-    margin: 39px;
-    color:hsl(245, 75%, 52%);
-    position: relative;
-    left:70px;
-    top:10px;
-    font-size:16px;
+    margin: 40px;
    
 }
 
+p{
+    color:hsl(224, 23%, 55%)
+}
 
-.p2{
-    font-size: 16px;
-    color:black;
-    width: 100px;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    position: relative;
-    left:5px;
-    
-    
-}
-.p1{
-    font-size: 16px;
-    position: relative;
-    bottom:15px;
-}
 .button {
     padding: 20px 26px;
     border: 0 none;
@@ -125,7 +79,7 @@ p{
 
 .button-pay{
     margin-top:40px;
-    width:75%;
+    width:75% auto;
     font-weight: 900;  
 }
 
@@ -135,12 +89,10 @@ p{
     border-radius: 10px;
     font-size:16px;
     margin-bottom: 15px;
-    
-    
+     
   }
-  
 
-.button:focus, .button:active:focus, .button.active:focus {
+  .button:focus, .button:active:focus, .button.active:focus {
     outline: 0 none;
 }
 
@@ -161,8 +113,15 @@ color:black;
     background: #007299;
     box-shadow: none;
 }
+.margin-top{
+    margin-top:60px;
 
-.text-s{
+}
+.margin-t1{
+    margin-top:0px;
+
+}
+.box-s{
     box-shadow: 2px 15px 29px #c9c6c6;
    
 }

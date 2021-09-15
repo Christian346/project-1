@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
-     <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
-   
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Red Hat Display', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
+
+    <div class="container ">
+        <div class="main-div box-s">
+            <img src="images/illustration-hero.svg" class="top-img" alt="">
+            <h2 class="margin-top"><b>Order Summary</b></h2>
+            <p class="margin-t1">you can now listen to millions of songs,<br />
+                audiobooks, and podcasts on any device<br />
+                anywhere you like!</p>
     
-    <div class ="main-div">
-        <img src="images/illustration-hero.svg"  class ="top-img" alt="">
-        <h2 class="margin-top"><b>Order Summary</b></h2>
-        <div class="p-margin">
-        <p>You can now listen to millions of songs,<br/>
-            audiobooks, and podcasts on any device<br/>
-            anywhere you like!</p>
-        </div>
-           
-            <div class="inner-div">
-               <img src="images/icon-music.svg" class="music-img">
-                
-               <div class="plan">
+            <div class=" inner-div container ">
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <img src="images/icon-music.svg" class="music-img" height="40px">
+                    </div>
+                    
+                    <div class="col-sm-3 col-md-4">
 
-               <p class="p2"><b>Annual Plan</b></p>
-
-                <p class="p1">$59.99/year </p>   
-             </div> 
-
-             <a href="#" class ="link"><b>Change</b></a>
-                
+                        <div class="plan">
+                            <h6><b>Annual Plan</b></h6>
+                            <p>$59.99/year </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3 col-md-4 change-div">
+                        <a href="#" class="link">Change</a>
+                    </div>
+                </div>
             </div>
-        
-             
-            <button class =" button button-primary button-pay text-s "><b>Proceed to Payment</b></button>
-            <br/>
-            <button class = "button button-light"><b>Cancel Order</b></button>  
-</div>
+            <div class="buttons">
+                <button class="button button-primary button-pay box-s">Proceed to Payment</button>
+                <br />
+                <button class="button button-light">Cancel Order</button>
+            </div>
+    
+        </div>
+    
+    </div>
+   
+
 </body>
+
 </html>
