@@ -1,84 +1,539 @@
+/*default for a 1040 x 900*/
+.body-bk-color{
+    background-color:rgba(223,232,255,255);
+}
 
 body{
-    background-image: url(images/pattern-background-desktop.svg) ;
+    
+     
+     background-image:url(images/pattern-background-desktop.svg); 
     /*background position*/
+    background-size: 120% 45%;
+    background-repeat:no-repeat;
     font-size: 16px;
-    font-family:red;
+    font-family:'Red Hat Display', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-   
 }
+
+.outer-box{
+display: flex;
+justify-content: center;
+height: 1000px;
+width: 1000px;
+
+}
+
 .main-div{
-
-margin-top:70px;
-background-color: hsl(225, 100%, 98%);
+background-color: hsl(0, 0%, 100%);
 text-align: center;
-width:40%;/* makes the div box shorter*/
 border-radius: 20px;
+width:45%;/* makes the div box shorter*/
+height:650px;
+border-radius: 30px;
+position:relative;
+top:105px;
+box-shadow:2px 2px 30px #cccbcb;
+font-size: 16px;
 
 }
-
-.container {
-    
-    display: flex;
-    justify-content:center;
-}
-
 .inner-div{
+    margin:auto;/*center*/
+    width:auto;/*center*/
+
     background-color:hsl(215, 67%, 96%);
     border-radius: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width:80%;
-    height: 100px ;
-   
+    height: 95px ;
 }
 
+
 .top-img{
-    
+
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     width:100%;
-    height:100%;
-    object-fit:cover;
+    height:200px;
+    
+    margin-bottom: 10px;
+
+
 }
 .music-img{
-    margin-top:30px;
-    margin-right:15px;
-    margin-left:20px;
-    
+    height:50px;
+    width:50px;
+    position:relative;
+    top:24px;
+    right:60px;
+
 }
 .plan{
-    margin-top:25px;
-    margin-right: 7px;
-    margin-left: 8px;
     
+    position: relative;
+    top:24px;
+    right:50px;
+    white-space: nowrap;/*keep it in a straight line*/
+
 }
 
 .link{
-    margin: 40px;
-   
+    color:hsl(245, 75%, 52%);
+    position: relative;
+    top:35px;
+    left:60px;
+    font-size:16px;
+
 }
 
 p{
     color:hsl(224, 23%, 55%)
 }
+.p2{
+    font-size: 16px;
+    color:black;
+    width: 100px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    position: relative;
+    left:5px;
 
-.button-pay{
-    margin-top:20px;
+
+}
+.p1{
+    font-size: 16px;
+    position: relative;
+    bottom:15px;
 }
 .margin-top{
     margin-top:25px;
+    font-size: 26px;
+    margin-bottom: 10px;;
 
 }
-.lightweight{
- font-weight:500px;
+
+.button-pay{
+    margin-top:20px;
+    width:80%;
+    font-weight: 900;  
 }
-.midweight{
-font-weight:700px ;
+
+.button-primary{
+    color:white;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    font-size:16px;
+    margin-bottom: 15px;
+
+
+  }
+  .button {
+    padding: 16px 24px;
+    border: 0 none;
+    font-weight: 500;
+    letter-spacing: 1px;
+
 }
-.heavyweight{
-font-weight:900px ;
+
+.button:focus, .button:active:focus, .button.active:focus {
+    outline: 0 none;
 }
+
+.button-light {
+    background: transparent;
+    color:hsl(224, 23%, 55%);
+}
+
+p{
+    color:hsl(224%, 23%, 55%);
+    margin-bottom:30px;
+}
+.button-light:hover{
+color:black;
+}
+.button-primary:hover, .button-primary:focus, .button-primary:active, .button-primary.active, .open > .dropdown-toggle.btn-primary {
+    background:hsl(224, 23%, 55%);
+}
+
+.button-primary:active, .button-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.text-s{
+    box-shadow: 2px 5px 10px #888888;
+
+}
+
+/*cell media query 375px x 667px*/
+@media screen and (max-width:376px) {
+    .body-bk-color{
+        background-color:rgba(223,232,255,255);
+    }
+    .body-bk-image{
+        background-image:url(images/pattern-background-mobile.svg); 
+        /*background position*/
+        background-size: 100% 25%;
+        background-repeat:no-repeat;
+    }
+   
+
+    
+    body{
+        
+        font-size: 16px;
+        font-family:'Red Hat Display', sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .outer-box{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    
+    }
+    
+    .main-div{
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    border-radius: 20px;
+    width:120%;/* makes the div box shorter*/
+    height:105%;
+    border-radius: 30px;
+    position:relative;
+    top:11%;
+    box-shadow:2px 2px 30px #cccbcb;
+    font-size: 16px;
+    
+    }
+    .inner-div{
+        margin:auto;/*center*/
+        width:auto;/*center*/
+        background-color:hsl(215, 67%, 96%);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:80%;
+        height: 15% ;
+    }
+    
+    
+    .top-img{
+    
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width:100%;
+        height:145px;
+        
+        margin-bottom: 1px;
+    
+    
+    }
+    .music-img{
+        height:45px;
+        width:45px;
+        position:relative;
+        top:17px;
+        right:9px;
+    
+    }
+    .plan{
+        font-size: 13px;
+        position: relative;
+        top:16px;
+        right:15px;
+        white-space: nowrap;/*keep it in a straight line*/
+    
+    }
+    .p2{
+        font-size: 12px;
+        color:black;
+        width: 100px;
+        white-space:nowrap;
+        overflow:hidden;
+        
+        position: relative;
+        top:7px;
+        left:2px;
+    
+    
+    }
+    
+    .link{
+        color:hsl(245, 75%, 52%);
+        position: relative;
+        top:30px;
+        left:10px;
+        font-size:12px;
+    
+    }
+    
+    p{
+        color:hsl(224, 23%, 55%);
+        margin-bottom: 20px;
+    }
+    
+    .p1{
+        font-size: 16px;
+        position: relative;
+        bottom:15px;
+    }
+    .margin-top{
+        
+        
+        margin-top:30px;
+        font-size: 24px;
+        margin-bottom: 15px;;
+    
+    }
+    
+    .button-pay{
+        margin-top:20px;
+        width:75%;
+        font-weight: 900;  
+    }
+    
+    .button-primary{
+        color:white;
+        background-color: hsl(245, 75%, 52%);
+        border-radius: 10px;
+        font-size:12px;
+        margin-bottom: 10px;
+        width:80%;
+    
+    
+      }
+      .button {
+        padding: 12px 30px;
+        border: 0 none;
+        font-weight: 500;
+        letter-spacing: 1px;
+    
+    }
+    
+    .button:focus, .button:active:focus, .button.active:focus {
+        outline: 0 none;
+    }
+    
+    .button-light {
+        background: transparent;
+        color:hsl(224, 23%, 55%);
+        font-size: 12px;
+        position: relative;
+        bottom:4px;
+    }
+    
+    p{
+        color:hsl(224%, 23%, 55%);
+        margin-bottom:30px;
+    }
+    .button-light:hover{
+    color:black;
+    }
+    .button-primary:hover, .button-primary:focus, .button-primary:active, .button-primary.active, .open > .dropdown-toggle.btn-primary {
+        background:hsl(224, 23%, 55%);
+    }
+    
+    .button-primary:active, .button-primary.active {
+        background: #007299;
+        box-shadow: none;
+    }
+    
+    .text-s{
+        box-shadow: 2px 5px 10px #888888;
+    
+    }
+     
+  }
+  
+/*med devices*/
+  @media screen and (min-width:377px) and (max-width:990px) {
+    .body-bk-color{
+        background-color:rgba(223,232,255,255);
+    }
+    .body-bk-image{
+        background-image:url(images/pattern-background-desktop.svg); 
+        /*background position*/
+        background-size: 105% 70%;
+        background-repeat:no-repeat;
+    }
+
+    
+    body{
+        
+        font-size: 16px;
+        font-family:'Red Hat Display', sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .outer-box{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    
+    }
+    
+    .main-div{
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    border-radius: 15px;
+    width:420px;/* makes the div box shorter*/
+    height:630px;
+    border-radius: 30px;
+    position:relative;
+    top:20%;
+    box-shadow:2px 2px 30px #cccbcb;
+    font-size: 16px;
+    
+    }
+    .inner-div{
+        margin:auto;/*center*/
+        width:auto;/*center*/
+    
+        background-color:hsl(215, 67%, 96%);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:80%;
+        height: 90px ;
+    }
+    
+    
+    .top-img{
+    
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width:100%;
+        height:200px;
+        
+        margin-bottom: 1px;
+    
+    
+    }
+    .music-img{
+        height:50px;
+        width:50px;
+        position:relative;
+        top:22px;
+        right:50px;
+    
+    }
+    .plan{
+        
+        position: relative;
+        top:22px;
+        right:35px;
+        white-space: nowrap;/*keep it in a straight line*/
+    
+    }
+    
+    .link{
+        color:hsl(245, 75%, 52%);
+        position: relative;
+        top:32px;
+        left:52px;
+        font-size:16px;
+    
+    }
+    
+    p{
+        color:hsl(224, 23%, 55%)
+    }
+    .p2{
+        font-size: 16px;
+        color:black;
+        width: 100px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        position: relative;
+        left:5px;
+    
+    
+    }
+    .p1{
+        font-size: 16px;
+        position: relative;
+        bottom:15px;
+    }
+    .margin-top{
+        
+        font-size: 25px;
+        margin-top:30px;
+        font-size: 32px;
+        margin-bottom: 10px;;
+    
+    }
+    
+    .button-pay{
+        margin-top:20px;
+        width:75%;
+        font-weight: 900;  
+    }
+    
+    .button-primary{
+        color:white;
+        background-color: hsl(245, 75%, 52%);
+        border-radius: 10px;
+        font-size:16px;
+        margin-bottom: 10px;
+        width:80%;
+    
+    
+      }
+      .button {
+        padding: 14px 20px;
+        border: 0 none;
+        font-weight: 500;
+        letter-spacing: 1px;
+    
+    }
+    
+    .button:focus, .button:active:focus, .button.active:focus {
+        outline: 0 none;
+    }
+    
+    .button-light {
+        background: transparent;
+        color:hsl(224, 23%, 55%);
+    }
+    
+    p{
+        color:hsl(224%, 23%, 55%);
+        margin-bottom:30px;
+    }
+    .button-light:hover{
+    color:black;
+    }
+    .button-primary:hover, .button-primary:focus, .button-primary:active, .button-primary.active, .open > .dropdown-toggle.btn-primary {
+        background:hsl(224, 23%, 55%);
+    }
+    
+    .button-primary:active, .button-primary.active {
+        background: #007299;
+        box-shadow: none;
+    }
+    
+    .text-s{
+        box-shadow: 2px 5px 10px #888888;
+    
+    }
+     
+  }
